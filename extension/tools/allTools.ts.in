@@ -94,11 +94,11 @@ export const allToolsInformation: { [key: string]: Tool } = {
 	},
 	'gopls': {
 		name: 'gopls',
-		importPath: 'golang.org/x/tools/gopls',
-		modulePath: 'golang.org/x/tools/gopls',
+		importPath: 'github.com/nacioboi/golang/tools/gopls',
+		modulePath: 'github.com/nacioboi/golang/tools/gopls',
 		replacedByGopls: false, // lol
 		isImportant: true,
-		description: 'Language Server from Google',
+		description: 'Language Server from Google (Modified by Joel)',
 		usePrereleaseInPreviewMode: true,
 		minimumGoVersion: semver.coerce('1.19'),
 		latestVersion: semver.parse('%s'),

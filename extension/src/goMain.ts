@@ -227,7 +227,7 @@ export async function activate(ctx: vscode.ExtensionContext): Promise<ExtensionA
 	addOnSaveTextDocumentListeners(ctx);
 
 	vscode.languages.setLanguageConfiguration(GO_MODE.language, {
-		wordPattern: /(-?\d*\.\d\w*)|([^`~!@#%^&*()\-=+[{\]}\\|;:'",.<>/?\s]+)/g
+		wordPattern: /(t*)|(-?\d*\.\d\w*)|([^`~!@#%^&*()\-=+[{\]}\\|;:'",.<>/?\s]+)/g
 	});
 
 	GoTaskProvider.setup(ctx, vscode.workspace);
